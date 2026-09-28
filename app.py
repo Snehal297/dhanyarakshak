@@ -1,6 +1,5 @@
 """
-Author: Snehal Patil
-Roll Number: 25101A2002
+Authors: Snehal Patil (25101A2002) & Grishma Patil (25101A2003)
 Project: DHANYARAKSHAK - AI-Powered Ginger Crop Disease Detection
 Context: Smart Agriculture & Responsible AI for Social Good
 Module: Streamlit Web Demonstration Application
@@ -139,12 +138,6 @@ pipeline = load_diagnostic_pipeline()
 # SIDEBAR: Context, Metadata & Live Demo Controls
 # ==========================================
 with st.sidebar:
-    st.image(
-        "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=400&q=80",
-        caption="DHANYARAKSHAK Smart Ginger Protection",
-        use_container_width=True
-    )
-
     st.markdown("### 🌾 DHANYARAKSHAK")
     st.markdown("""
     **Social Good AI Prototype**  
@@ -154,8 +147,9 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("#### 👨‍🔬 Project Authorship")
     st.markdown("""
-    - **Developer**: **Snehal Patil**
-    - **Roll Number**: `25101A2002`
+    - **Developers**:
+      - **Snehal Patil** (`25101A2002`)
+      - **Grishma Patil** (`25101A2003`)
     - **Architecture**: `ResNet-50 CNN Transfer Learning`
     - **Domain**: Responsible AI / Smart Agriculture
     """)
@@ -195,7 +189,7 @@ st.markdown("""
     <h1>🌱 DHANYARAKSHAK: AI Ginger Crop Health Engine</h1>
     <p>Empowering Smallholder Farmers with ResNet50 Leaf Pathology Detection & Precision Water Conservation</p>
     <div class="author-badge">
-        Author: Snehal Patil | Roll No: 25101A2002 | Responsible AI for Social Good
+        Authors: Snehal Patil (25101A2002) &amp; Grishma Patil (25101A2003) | Responsible AI for Social Good
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -469,7 +463,7 @@ if input_image is not None:
             st.markdown("#### 📥 Export Official Advisory Note")
             report_text = f"""====================================================
 DHANYARAKSHAK CROP HEALTH & ADVISORY REPORT
-Author: Snehal Patil (Roll Number: 25101A2002)
+Authors: Snehal Patil (Roll Number: 25101A2002) & Grishma Patil (Roll Number: 25101A2003)
 Initiative: Smart Agriculture & Responsible AI
 ====================================================
 Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}
@@ -517,8 +511,8 @@ No farmer data was retained or uploaded to external servers.
             | **2. Explainability** | Saliency attention heatmap overlay highlighting infected tissue | Visual validation ensures AI is observing real lesions, not background artifacts |
             | **3. Privacy by Design** | 100% on-device processing in ephemeral memory; zero external logging | Guarantees farmer data sovereignty, location secrecy, and confidentiality |
             | **4. Ecological Sustainability** | Rule engine pairs disease diagnosis with precision water conservation | Saves 35-45% irrigation water and prevents groundwater chemical runoff |
-            | **5. Scientific Accountability** | Author metadata (Snehal Patil, Roll No: 25101A2002) & extension cross-checks | Clear lineage and responsible referral to human agronomists when confidence is low |
+            | **5. Scientific Accountability** | Author metadata (Snehal Patil: 25101A2002, Grishma Patil: 25101A2003) & extension cross-checks | Clear lineage and responsible referral to human agronomists when confidence is low |
             """)
 
 st.markdown("---")
-st.caption("DHANYARAKSHAK Prototype | Developed by Snehal Patil (Roll No: 25101A2002) | ResNet50 Transfer Learning for Smart Agriculture")
+st.caption("DHANYARAKSHAK Prototype | Developed by Snehal Patil (25101A2002) & Grishma Patil (25101A2003) | ResNet50 Transfer Learning for Smart Agriculture")

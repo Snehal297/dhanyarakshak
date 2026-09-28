@@ -1,6 +1,5 @@
 """
-Author: Snehal Patil
-Roll Number: 25101A2002
+Authors: Snehal Patil (25101A2002) & Grishma Patil (25101A2003)
 Project: DHANYARAKSHAK - AI-Powered Ginger Crop Disease Detection
 Script: Comprehensive System & Verification Test Suite
 """
@@ -20,6 +19,8 @@ def test_metadata():
             content = f.read()
             assert "Snehal Patil" in content, f"Snehal Patil missing from {fname}"
             assert "25101A2002" in content, f"Roll Number 25101A2002 missing from {fname}"
+            assert "Grishma Patil" in content, f"Grishma Patil missing from {fname}"
+            assert "25101A2003" in content, f"Roll Number 25101A2003 missing from {fname}"
     print("  [OK] Metadata verified across all core Python scripts.")
 
 def test_model_pipeline():
@@ -69,7 +70,7 @@ def test_rules_engine():
 if __name__ == "__main__":
     print("==================================================")
     print("DHANYARAKSHAK VERIFICATION TEST SUITE")
-    print("Author: Snehal Patil | Roll Number: 25101A2002")
+    print("Authors: Snehal Patil (25101A2002) & Grishma Patil (25101A2003)")
     print("==================================================")
     test_metadata()
     test_model_pipeline()

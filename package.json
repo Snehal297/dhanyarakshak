@@ -2,11 +2,11 @@
   "name": "dhanyarakshak",
   "version": "1.0.0",
   "description": "AI-Powered Ginger Crop Disease Detection & Precision Water Advisory Engine",
-  "author": "Snehal Patil (Roll Number: 25101A2002)",
+  "author": "Snehal Patil (25101A2002) & Grishma Patil (25101A2003)",
   "license": "MIT",
   "scripts": {
-    "dev": "streamlit run app.py",
-    "start": "streamlit run app.py",
+    "dev": "python -m streamlit run app.py",
+    "start": "python -m streamlit run app.py",
     "test": "python test_system.py"
   }
 }

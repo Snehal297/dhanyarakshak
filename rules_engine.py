@@ -1,6 +1,5 @@
 """
-Author: Snehal Patil
-Roll Number: 25101A2002
+Authors: Snehal Patil (25101A2002) & Grishma Patil (25101A2003)
 Project: DHANYARAKSHAK - AI-Powered Ginger Crop Disease Detection
 Context: Smart Agriculture & Responsible AI for Social Good
 Module: Rule-Based Decision & Advisory Engine

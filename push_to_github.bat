@@ -2,7 +2,7 @@
 title Push DHANYARAKSHAK to GitHub
 echo ======================================================================
 echo DHANYARAKSHAK: GitHub Repository Setup & Push
-echo Author: Snehal Patil (Roll Number: 25101A2002)
+echo Authors: Snehal Patil (25101A2002) & Grishma Patil (25101A2003)
 echo ======================================================================
 echo.
 

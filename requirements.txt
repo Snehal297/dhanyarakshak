@@ -1,5 +1,5 @@
 # DHANYARAKSHAK Dependencies
-# Author: Snehal Patil | Roll Number: 25101A2002
+# Authors: Snehal Patil (25101A2002) & Grishma Patil (25101A2003)
 # Project: AI-Powered Ginger Crop Disease Detection & Water Advisory Engine
 
 streamlit>=1.35.0

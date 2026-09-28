@@ -1,7 +1,6 @@
 # 🌱 DHANYARAKSHAK: AI-Powered Ginger Crop Disease Detection & Precision Water Advisory
 
-**Author**: Snehal Patil  
-**Roll Number**: 25101A2002  
+**Authors**: Snehal Patil (Roll No: 25101A2002) & Grishma Patil (Roll No: 25101A2003)  
 **Domain**: Smart Agriculture & Responsible AI for Social Good  
 **Tech Stack**: Python, ResNet-50 CNN Transfer Learning, OpenCV, Streamlit  
 
@@ -101,7 +100,7 @@ python test_system.py
 Use this structured walkthrough to deliver a compelling live evaluation or classroom demonstration:
 
 ### Step 1: Introduction & Ethical Context (Minute 1)
-- Point out the **Header Badge**: **Author: Snehal Patil | Roll No: 25101A2002**.
+- Point out the **Header Badge**: **Authors: Snehal Patil (25101A2002) & Grishma Patil (25101A2003)**.
 - Highlight the **Responsible AI Privacy Banner** at the top: Explain that smallholder farmers' data sovereignty is safeguarded by executing all CNN inferences in local volatile RAM without cloud telemetry or data harvesting.
 
 ### Step 2: Live AI Inference (Minutes 2 - 4)
@@ -139,4 +138,4 @@ Use this structured walkthrough to deliver a compelling live evaluation or class
 | **Transparency** | Explicit confidence percentages, calibrated probability distributions, and ResNet-50 attention heatmaps. |
 | **Privacy by Design** | Ephemeral, local edge processing; zero cloud storage of farmer imagery or personal data. |
 | **Ecological Responsibility** | Pairing disease detection with smart water management (saves ~40% water) and minimizing chemical runoff. |
-| **Accountability** | Explicit authorship attribution (Snehal Patil, Roll No: 25101A2002) and safe advisory thresholds recommending human agronomist escalation when confidence is low. |
+| **Accountability** | Explicit authorship attribution (Snehal Patil: 25101A2002, Grishma Patil: 25101A2003) and safe advisory thresholds recommending human agronomist escalation when confidence is low. |
