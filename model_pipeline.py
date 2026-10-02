@@ -44,18 +44,19 @@ class GingerResNet50Pipeline:
 
     def _initialize_model(self, weights_path: str = None):
         """Initializes ResNet-50 architecture and sets up transfer learning weights."""
+        self.weights_loaded = False
         try:
             import torch
             import torch.nn as nn
             import torchvision.models as models
 
+            torch.set_num_threads(1)
             self.torch = torch
             self.nn = nn
-            self.device = "cuda" if torch.cuda.is_available() else "cpu"
+            self.device = "cpu"
 
-            # ResNet50 backbone
-            # Utilizing ResNet50 architecture with custom dense head for 5-class ginger disease classification
-            base_model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT if weights_path is None else None)
+            # ResNet50 backbone initialized cleanly without heavy 100MB download
+            base_model = models.resnet50(weights=None)
             
             # Freeze early feature layers for transfer learning stability
             for param in list(base_model.parameters())[:-15]:
@@ -73,6 +74,7 @@ class GingerResNet50Pipeline:
             if weights_path and os.path.exists(weights_path):
                 state_dict = torch.load(weights_path, map_location=self.device)
                 base_model.load_state_dict(state_dict)
+                self.weights_loaded = True
 
             base_model.to(self.device)
             base_model.eval()
@@ -260,7 +262,7 @@ class GingerResNet50Pipeline:
         start_time = time.time()
         tensor_batch, display_rgb = self.preprocess_image(image)
 
-        if self.use_torch and self.model is not None:
+        if self.use_torch and self.model is not None and getattr(self, "weights_loaded", False):
             try:
                 import torch
                 with torch.no_grad():

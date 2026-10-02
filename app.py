@@ -87,6 +87,7 @@ st.markdown("""
         border: 1px solid #e9ecef;
         text-align: center;
         transition: transform 0.2s ease;
+        color: #1a1a1a;
     }
 
     .metric-card:hover {
@@ -100,6 +101,7 @@ st.markdown("""
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         border-top: 4px solid #2d6a4f;
         margin-bottom: 18px;
+        color: #1a1a1a;
     }
 
     .timeline-step {
