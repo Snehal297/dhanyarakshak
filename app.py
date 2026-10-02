@@ -128,13 +128,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-@st.cache_resource(show_spinner=False)
-def load_diagnostic_pipeline():
+@st.cache_resource(show_spinner="Initializing DHANYARAKSHAK Diagnostic Engine...")
+def get_diagnostic_pipeline():
     """Initializes and caches the ResNet50 model pipeline."""
     return GingerResNet50Pipeline()
-
-
-pipeline = load_diagnostic_pipeline()
 
 # ==========================================
 # SIDEBAR: Context, Metadata & Live Demo Controls
@@ -269,6 +266,7 @@ if input_image is not None:
 
     if should_run:
         with st.spinner("Analyzing foliar pathology using ResNet50 Transfer Learning..."):
+            pipeline = get_diagnostic_pipeline()
             pred_results = pipeline.predict(input_image)
             advisory = get_disease_advisory(
                 predicted_class=pred_results["predicted_class"],
